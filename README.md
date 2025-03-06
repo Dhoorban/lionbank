@@ -11,7 +11,7 @@ This project follows the **Spring MVC Pattern**, which is a widely adopted **Lay
 
 ### **Database Schema**
 - The project uses an **in-memory H2 database** for simplicity and quick prototyping.
-- The datasource includes a **unique transaction identifier**.
+- The datasource doesn't seem to include a **unique transaction identifier**.
 - Since no predefined unique transaction identifier was provided, an **auto-incrementing ID** has been introduced to ensure uniqueness.
 
 ### **Code Considerations**
