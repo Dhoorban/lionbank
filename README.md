@@ -34,7 +34,7 @@ mvn spring-boot:run -f pom.xml
 > **Note:** The transaction ID is auto-generated since the dataset did not provide a unique identifier.
 
 ```sh
-curl -u lion:maybank -X PUT "http://localhost:8080/transactions/1" \
+curl -u lion:maybank -X PUT "http://localhost:8080/api/transactions/1" \
      -H "Content-Type: application/json" \
      -d "Updated transaction description"
 ```
@@ -52,8 +52,9 @@ curl -u lion:maybank "http://localhost:8080/api/transactions?page=0&size=10&acco
 
 ### ACTIVITY DIAGRAM
 
-FOR REST CALL
+#### FOR REST CALL
+
 ![img_2.png](img_2.png)
 
-FOR BATCH PROCESS
+#### FOR BATCH PROCESS
 ![img_3.png](img_3.png)
